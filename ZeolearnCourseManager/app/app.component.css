@@ -1,0 +1,31 @@
+li {
+    font-size: large;
+}
+
+div.panel-heading {
+   font-size: x-large; 
+}
+
+/* navbar */
+.navbar-default {
+    background-color: #63d297!important;
+    border-color: #63d297!important;
+}
+
+.navbar-default .navbar-brand {
+    color: black;
+}
+.navbar-default .navbar-nav li a {
+    color: black
+}
+.panel-success > .panel-heading {
+    color: white;
+    background-color: #63d297; 
+    border-color: #d6e9c6; 
+}
+
+.btn-primary{
+    color: white;
+    background-color: #63d297; 
+}
+

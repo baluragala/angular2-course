@@ -1,0 +1,14 @@
+<div>
+    <h3>This from linked template</h3>
+     <input type="button" value="Click Me"  (click)='onClick()' />
+
+     <div [style.color]="color">style using property syntax</div>
+
+
+<div [ngStyle]="{'color': color, 'font-size': size + 'px'}">
+   style using ngStyle
+</div>
+
+<div [ngClass]="['bold-text', 'green']">array of classes</div>
+
+</div>

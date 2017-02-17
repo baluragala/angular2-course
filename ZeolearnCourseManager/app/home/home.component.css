@@ -1,0 +1,8 @@
+.panel-success > .panel-heading {
+    color: white;
+    background-color: #63d297; 
+    border-color: #d6e9c6; 
+}
+p {
+    padding: 10px;
+}
