@@ -42,7 +42,7 @@
                             {{course.courseTitle}}
                         </a></td>
                         <td>{{ course.courseCode | lowercase }}</td>
-                        <td [hidden]='true'>{{ course.price | currency:'USD':true:'1.2-2'}}</td>
+                        <td>{{ course.price | currency:'USD':true:'1.2-2'}}</td>
                         <td>
                             <ai-star [rating]='course.rating'
                                 (ratingClicked)='onRatingClicked($event)'>

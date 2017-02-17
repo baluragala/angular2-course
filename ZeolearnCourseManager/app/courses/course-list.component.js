@@ -8,8 +8,8 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-var core_1 = require("@angular/core");
-var course_service_1 = require("./course.service");
+var core_1 = require('@angular/core');
+var course_service_1 = require('./course.service');
 var CourseListComponent = (function () {
     function CourseListComponent(_courseService) {
         this._courseService = _courseService;
@@ -30,14 +30,14 @@ var CourseListComponent = (function () {
     CourseListComponent.prototype.onRatingClicked = function (message) {
         this.pageTitle = 'Courses: ' + message;
     };
+    CourseListComponent = __decorate([
+        core_1.Component({
+            templateUrl: '/app/courses/course-list.component.html',
+            styleUrls: ['/app/courses/course-list.component.css']
+        }), 
+        __metadata('design:paramtypes', [course_service_1.CourseService])
+    ], CourseListComponent);
     return CourseListComponent;
 }());
-CourseListComponent = __decorate([
-    core_1.Component({
-        templateUrl: '/app/courses/course-list.component.html',
-        styleUrls: ['/app/courses/course-list.component.css']
-    }),
-    __metadata("design:paramtypes", [course_service_1.CourseService])
-], CourseListComponent);
 exports.CourseListComponent = CourseListComponent;
 //# sourceMappingURL=course-list.component.js.map

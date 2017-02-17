@@ -8,8 +8,8 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-var core_1 = require("@angular/core");
-var router_1 = require("@angular/router");
+var core_1 = require('@angular/core');
+var router_1 = require('@angular/router');
 var CourseDetailGuard = (function () {
     function CourseDetailGuard(_router) {
         this._router = _router;
@@ -24,11 +24,11 @@ var CourseDetailGuard = (function () {
         ;
         return true;
     };
+    CourseDetailGuard = __decorate([
+        core_1.Injectable(), 
+        __metadata('design:paramtypes', [router_1.Router])
+    ], CourseDetailGuard);
     return CourseDetailGuard;
 }());
-CourseDetailGuard = __decorate([
-    core_1.Injectable(),
-    __metadata("design:paramtypes", [router_1.Router])
-], CourseDetailGuard);
 exports.CourseDetailGuard = CourseDetailGuard;
 //# sourceMappingURL=course-guard.service.js.map

@@ -8,9 +8,9 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-var core_1 = require("@angular/core");
-var router_1 = require("@angular/router");
-var course_service_1 = require("./course.service");
+var core_1 = require('@angular/core');
+var router_1 = require('@angular/router');
+var course_service_1 = require('./course.service');
 var CourseDetailComponent = (function () {
     function CourseDetailComponent(_route, _router, _courseService) {
         this._route = _route;
@@ -31,15 +31,13 @@ var CourseDetailComponent = (function () {
     CourseDetailComponent.prototype.onBack = function () {
         this._router.navigate(['/courses']);
     };
+    CourseDetailComponent = __decorate([
+        core_1.Component({
+            templateUrl: '/app/courses/course-detail.component.html'
+        }), 
+        __metadata('design:paramtypes', [router_1.ActivatedRoute, router_1.Router, course_service_1.CourseService])
+    ], CourseDetailComponent);
     return CourseDetailComponent;
 }());
-CourseDetailComponent = __decorate([
-    core_1.Component({
-        templateUrl: '/app/courses/course-detail.component.html'
-    }),
-    __metadata("design:paramtypes", [router_1.ActivatedRoute,
-        router_1.Router,
-        course_service_1.CourseService])
-], CourseDetailComponent);
 exports.CourseDetailComponent = CourseDetailComponent;
 //# sourceMappingURL=course-detail.component.js.map
