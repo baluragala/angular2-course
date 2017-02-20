@@ -35,6 +35,7 @@ var UnlessDirective = (function () {
     }
     Object.defineProperty(UnlessDirective.prototype, "myUnless", {
         set: function (condition) {
+            console.log(this.templateRef, this.viewContainer);
             if (!condition && !this.hasView) {
                 this.viewContainer.createEmbeddedView(this.templateRef);
                 this.hasView = true;

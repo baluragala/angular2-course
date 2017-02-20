@@ -12,7 +12,7 @@ import {Component} from '@angular/core';
               
               <hr/>
               <h3>Power Of</h3>
-              <h1>{{ 2 | powerof:10 }}</h1>
+              <h1>{{ 2 | powerof:10:5 }}</h1>
               `,
 })
 export class AppComponent {

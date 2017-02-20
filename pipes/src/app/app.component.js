@@ -28,7 +28,7 @@ var AppComponent = (function () {
     AppComponent = __decorate([
         core_1.Component({
             selector: 'my-app',
-            template: "\n              <h1>Hello {{name}}</h1>\n              <p>Today is {{today}}</p>\n              <p>Today piped {{today | date:format }}</p>\n              <p>Today piped, chained {{today | date:format | uppercase }}</p>\n              \n              <button (click)=\"toggleFormat()\">Toggle Format</button>\n              \n              <hr/>\n              <h3>Power Of</h3>\n              <h1>{{ 2 | powerof:10 }}</h1>\n              ",
+            template: "\n              <h1>Hello {{name}}</h1>\n              <p>Today is {{today}}</p>\n              <p>Today piped {{today | date:format }}</p>\n              <p>Today piped, chained {{today | date:format | uppercase }}</p>\n              \n              <button (click)=\"toggleFormat()\">Toggle Format</button>\n              \n              <hr/>\n              <h3>Power Of</h3>\n              <h1>{{ 2 | powerof:10:5 }}</h1>\n              ",
         }), 
         __metadata('design:paramtypes', [])
     ], AppComponent);

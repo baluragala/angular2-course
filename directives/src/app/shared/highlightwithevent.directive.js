@@ -19,6 +19,9 @@ var HighlightWithEventDirective = (function () {
     HighlightWithEventDirective.prototype.onMouseLeave = function () {
         this.highlight(null);
     };
+    HighlightWithEventDirective.prototype.onClick = function () {
+        this.highlight("red");
+    };
     HighlightWithEventDirective.prototype.highlight = function (color) {
         this.el.nativeElement.style.backgroundColor = color;
     };
@@ -34,6 +37,12 @@ var HighlightWithEventDirective = (function () {
         __metadata('design:paramtypes', []), 
         __metadata('design:returntype', void 0)
     ], HighlightWithEventDirective.prototype, "onMouseLeave", null);
+    __decorate([
+        core_1.HostListener('click'), 
+        __metadata('design:type', Function), 
+        __metadata('design:paramtypes', []), 
+        __metadata('design:returntype', void 0)
+    ], HighlightWithEventDirective.prototype, "onClick", null);
     HighlightWithEventDirective = __decorate([
         core_1.Directive({
             selector: '[myHighlightWithEvent]'

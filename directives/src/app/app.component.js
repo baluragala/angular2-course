@@ -12,7 +12,7 @@ var core_1 = require('@angular/core');
 var AppComponent = (function () {
     function AppComponent() {
         this.color = 'green';
-        this.condition = true;
+        this.condition = false;
     }
     AppComponent = __decorate([
         core_1.Component({

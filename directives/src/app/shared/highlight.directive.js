@@ -12,6 +12,7 @@ var core_1 = require('@angular/core');
 var HighlightDirective = (function () {
     function HighlightDirective(el) {
         el.nativeElement.style.backgroundColor = 'yellow';
+        console.log(el);
     }
     HighlightDirective = __decorate([
         core_1.Directive({ selector: '[myHighlight]' }), 

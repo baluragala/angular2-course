@@ -23,15 +23,26 @@ export class UnlessDirective {
 
   constructor(private templateRef: TemplateRef<any>,
               private viewContainer: ViewContainerRef) {
+
+                
   }
 
   @Input() set myUnless(condition: boolean) {
+
+    console.log(this.templateRef, this.viewContainer)
     if (!condition && !this.hasView) {
+    
       this.viewContainer.createEmbeddedView(this.templateRef);
+    
       this.hasView = true;
     } else if (condition && this.hasView) {
       this.viewContainer.clear();
       this.hasView = false;
     }
+
+
+
   }
+
+
 }

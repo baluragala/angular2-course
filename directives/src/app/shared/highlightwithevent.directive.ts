@@ -14,6 +14,10 @@ export class HighlightWithEventDirective {
     this.highlight(null);
   }
 
+  @HostListener('click') onClick() {
+    this.highlight("red");
+  }
+
   private highlight(color: string) {
     this.el.nativeElement.style.backgroundColor = color;
   }

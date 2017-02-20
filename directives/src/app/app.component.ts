@@ -34,5 +34,5 @@ import {Component} from '@angular/core';
 })
 export class AppComponent {
   color = 'green';
-  condition = true;
+  condition = false;
 }
