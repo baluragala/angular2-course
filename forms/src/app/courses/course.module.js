@@ -12,14 +12,15 @@ var core_1 = require("@angular/core");
 var platform_browser_1 = require("@angular/platform-browser");
 var course_form_component_1 = require("./course-form.component");
 var forms_1 = require('@angular/forms');
+var course_detail_component_1 = require("./course-detail.component");
 var CourseModule = (function () {
     function CourseModule() {
     }
     CourseModule = __decorate([
         core_1.NgModule({
-            imports: [platform_browser_1.BrowserModule, forms_1.FormsModule],
-            declarations: [course_form_component_1.CourseFormComponent],
-            exports: [course_form_component_1.CourseFormComponent],
+            imports: [platform_browser_1.BrowserModule, forms_1.FormsModule, forms_1.ReactiveFormsModule],
+            declarations: [course_form_component_1.CourseFormComponent, course_detail_component_1.CourseDetailComponent],
+            exports: [course_form_component_1.CourseFormComponent, course_detail_component_1.CourseDetailComponent],
         }), 
         __metadata('design:paramtypes', [])
     ], CourseModule);

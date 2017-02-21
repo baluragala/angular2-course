@@ -12,14 +12,26 @@ var __metadata = (this && this.__metadata) || function (k, v) {
  * Created by moksha on 20/02/17.
  */
 var core_1 = require('@angular/core');
+var mock_data_1 = require("./mock-data");
 var CourseFormComponent = (function () {
     function CourseFormComponent() {
-        this.categories = ['IT', 'Finance', 'Marketing'];
         this.submitted = false;
-        this.model = {};
+        //model = {};
+        this.model = {
+            title: "Mastering Angular 2",
+            description: "This course teaches you from basic to advanced concepts of angular2",
+            category: "IT"
+        };
     }
     CourseFormComponent.prototype.onSubmit = function () {
+        console.log(this.courseForm);
         this.submitted = true;
+    };
+    CourseFormComponent.prototype.ngOnInit = function () {
+        this.categories = mock_data_1.CATEGORIES;
+    };
+    CourseFormComponent.prototype.ngAfterViewInit = function () {
+        console.log(this.courseForm);
     };
     Object.defineProperty(CourseFormComponent.prototype, "diagnostic", {
         get: function () {
@@ -28,11 +40,16 @@ var CourseFormComponent = (function () {
         enumerable: true,
         configurable: true
     });
+    __decorate([
+        core_1.ViewChild('courseForm'), 
+        __metadata('design:type', Object)
+    ], CourseFormComponent.prototype, "courseForm", void 0);
     CourseFormComponent = __decorate([
         core_1.Component({
             moduleId: module.id,
             selector: 'zcm-course-form',
-            templateUrl: './course-form.component.html'
+            templateUrl: './course-form.component.html',
+            styleUrls: ['./course-form.component.css']
         }), 
         __metadata('design:paramtypes', [])
     ], CourseFormComponent);
